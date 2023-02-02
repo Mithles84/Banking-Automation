@@ -1,0 +1,14 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "accounts" (
+	"account_no"	integer,
+	"account_name"	text,
+	"account_pass"	text,
+	"account_email"	text,
+	"account_mob"	text,
+	"account_type"	text,
+	"account_bal"	float,
+	"account_opendate"	text,
+	PRIMARY KEY("account_no" AUTOINCREMENT)
+);
+INSERT INTO "accounts" VALUES (1,'xyz','12345678@#','xyz@gmail.com','999999999','Saving',0.0,'2023-01-14');
+COMMIT;
